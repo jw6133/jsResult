@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum App</title>
+  </head>
+  <style>
+    body{
+      color: white;
+      text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+      font-family: Sinifont;
+    }
+    @font-face {
+    font-family: Sinifont; 
+    src: url("font/Sinistre.woff");
+  }
+    h1{
+      text-align: center;
+      color: white;
+      text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    }
+  </style>
+  <body>
+    <form class="hidden" id="login-form">
+      <input class="loginput"
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+      <span class="underline"></span>
+      <input class="logbutton" type="submit" value="Log In" />
+    </form>
+    <h1 id="clock">00:00:00</h1>
+    <h1 class="hidden" id="greeting"></h1>
+    <form id="todo-form">
+      <br>
+      <br>
+      <h2 style="text-align:center">What you gonna do Today?</h2>
+      <input class="midinput" type="text" required>
+      <span class="underline"></span>
+    </form>
+    <ul class="middown", id="todo-list">
+      
+    </ul>
+      <div id="quote" class="quote"></div>
+    <div class="righttop", id="weather">
+      <span></span>
+      <span></span>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
